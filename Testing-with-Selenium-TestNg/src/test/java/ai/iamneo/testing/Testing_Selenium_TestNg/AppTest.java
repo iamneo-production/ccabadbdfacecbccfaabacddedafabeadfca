@@ -21,6 +21,9 @@ public class AppTest {
 		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 	}
 
+	/**
+	 * @throws InterruptedException
+	 */
 	@Test
 //Checking the title of iamNeo (Home - iamneo)
 	public void iamNeo() throws InterruptedException 
