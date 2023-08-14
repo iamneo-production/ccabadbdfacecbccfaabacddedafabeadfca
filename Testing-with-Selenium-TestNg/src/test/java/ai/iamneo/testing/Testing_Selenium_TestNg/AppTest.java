@@ -53,10 +53,9 @@ public class AppTest {
 //Back to iamNeo
 	public void testcase_3() throws InterruptedException 
 	{
-		driver.findElement(By.id("gh-ac)).sendkeys("Apple watch");
-		driver.findElement(By.id("gh-btn")).click();
-		String get = driver.findElement()
-		")) 
+		WebElement productn = driver.findElement(By.xpath("//*[@id=\"srp-river-results\"]/ul/li[3]/div/div[2]/a/div/span"));
+		String product = productn.getText();
+		Assert.assertEquals(product,"Apple Watch Series 4 40mm 44mm GPS+ WIFI +LTE UNLOCKED Gold Gray Silver - Good");
 
 	}
 	@Test
