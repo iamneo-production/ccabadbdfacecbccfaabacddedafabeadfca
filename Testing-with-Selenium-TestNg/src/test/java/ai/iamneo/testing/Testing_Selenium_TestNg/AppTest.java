@@ -46,11 +46,16 @@ public class AppTest {
 	
 	
 
+	/**
+	 * @throws InterruptedException
+	 */
 	@Test
 //Moving to FACEBOOK
-	public void nextPage() throws InterruptedException 
+	public void testcase_1() throws InterruptedException 
 	{
-		 	
+		 driver.get("https://www.ebay.com/");
+		 String title = driver.getTitle();
+		 Assert.assertEquals(title,"Electronics,cars,fashion,collectibles & More | eBay");	
 		
 
 	}
@@ -58,7 +63,7 @@ public class AppTest {
 //Back to iamNeo
 	public void backPage() throws InterruptedException 
 	{
-		 
+		driver.find 
 
 	}
 	@Test
