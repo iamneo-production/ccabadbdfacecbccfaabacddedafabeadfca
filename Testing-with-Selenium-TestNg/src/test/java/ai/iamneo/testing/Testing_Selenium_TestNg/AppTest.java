@@ -63,7 +63,9 @@ public class AppTest {
 //Back to iamNeo
 	public void backPage() throws InterruptedException 
 	{
-		driver.find 
+		driver.findElement(By.id("gh-ac)).sendkeys("Apple watch");
+		driver.findElement(By.id("gh-btn")).click();
+		")) 
 
 	}
 	@Test
