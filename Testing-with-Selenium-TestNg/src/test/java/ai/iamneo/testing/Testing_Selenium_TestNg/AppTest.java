@@ -29,20 +29,9 @@ public class AppTest {
 	public void iamNeo() throws InterruptedException 
 	{
 
-		driver.manage().window().maximize();
-		driver.get("https://in.ebay.com");
-		driver.findElement(By.id("gh-ac")).sendKeys(product);
-		
-		WebElement dropdown = driver.findElement(By.id("gh-cat"));
-		Select selectCategory = new Select(dropdown);
-		
-		selectCategory.selectByVisibleText(category);
-		
-		driver.findElement(By.id("gh-btn")).click();
-		
-		String result = driver.findElement(By.className("listingscnt")).getText();
-		
-		System.out.println("Result :: "+ result);
+		driver.get("https://www.ebay.com/");
+		String title = driver.getTitle();
+		Assert.assertEquals(title,)
 	
 	
 
