@@ -26,12 +26,12 @@ public class AppTest {
 	 */
 	@Test
 //Checking the title of iamNeo (Home - iamneo)
-	public void iamNeo() throws InterruptedException 
+	public void testcase_1() throws InterruptedException 
 	{
 
 		driver.get("https://www.ebay.com/");
 		String title = driver.getTitle();
-		Assert.assertEquals(title,)
+		Assert.assertEquals(title,"Electronics,cars,fashion,collectibles & More | eBay");
 	
 	
 
@@ -40,11 +40,12 @@ public class AppTest {
 	 */
 	@Test
 //Moving to FACEBOOK
-	public void testcase_1() throws InterruptedException 
+	public void testcase_2() throws InterruptedException 
 	{
-		 driver.get("https://www.ebay.com/");
-		 String title = driver.getTitle();
-		 Assert.assertEquals(title,"Electronics,cars,fashion,collectibles & More | eBay");	
+		driver.findElement(By.id("gh-ac")).sendKeys(product);
+		driver.findElement(By.id("gh-btn")).click();
+		String get = driver.findElement(By.xpath("listingscnt")).getText();
+
 		
 
 	}
