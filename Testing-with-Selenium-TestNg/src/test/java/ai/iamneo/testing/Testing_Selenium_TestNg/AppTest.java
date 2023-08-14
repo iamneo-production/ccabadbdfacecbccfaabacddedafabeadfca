@@ -44,17 +44,18 @@ public class AppTest {
 	{
 		driver.findElement(By.id("gh-ac")).sendKeys(product);
 		driver.findElement(By.id("gh-btn")).click();
-		String get = driver.findElement(By.xpath("listingscnt")).getText();
-
+		String get = driver.findElement(By.xpath("[@id=\"srp-river-results\"]/ul/li[1]/div/div[2]/a/div/span")).getText();
+		Assert.assertEquals(get,"Apple Watch Series 5 40mm 44mm GPS+ WIFI +LTE UNLOCKED Gold Gray Silver - Good");
 		
 
 	}
 	@Test
 //Back to iamNeo
-	public void backPage() throws InterruptedException 
+	public void testcase_3() throws InterruptedException 
 	{
 		driver.findElement(By.id("gh-ac)).sendkeys("Apple watch");
 		driver.findElement(By.id("gh-btn")).click();
+		String get = driver.findElement()
 		")) 
 
 	}
